@@ -1,0 +1,42 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    //"source": "~/.local/share/fastfetch/ascii/arch.txt",
+    "source": "/home/chuvak/Pictures/норм фотки/photo_9_2026-06-10_01-05-37.jpg",
+    "type": "auto",
+    "width": 35,
+    "height": 16,
+    "padding": { "top": 2, "left": 3, "right": 5 }
+  },
+  "display": { "separator": "  " },
+  "modules": [
+    "break",
+    { "type": "title", "key": " ", "format": "{user-name}@{host-name}", "keyColor": "38;5;250" },
+    { "type": "custom", "format": "  ──────────────────────────────────", "color": "38;5;238" },
+
+    // Software
+    { "type": "os", "key": "  os      ", "keyColor": "38;5;75" },
+    { "type": "kernel", "key": "  kernel  ", "keyColor": "38;5;253" },
+    { "type": "packages", "format": "{} (pacman)", "key": "  pkgs    ", "keyColor": "38;5;223" },
+    { "type": "shell", "key": "  shell   ", "keyColor": "38;5;115" },
+    { "type": "terminal", "key": "  term    ", "keyColor": "38;5;86" },
+    { "type": "wm", "key": "  wm      ", "keyColor": "38;5;210" },
+    { "type": "uptime", "key": "  uptime  ", "keyColor": "38;5;51" },
+
+    { "type": "custom", "format": "  ──────────────────────────────────", "color": "38;5;238" },
+
+    // Hardware (обновленные цвета)
+    { "type": "host", "key": "󰌢  host    ", "keyColor": "38;5;252" },
+    { "type": "cpu", "key": "󰻠  cpu     ", "keyColor": "38;5;222" },
+    { "type": "gpu", "key": "󰍹  gpu     ", "keyColor": "38;5;81" }, 
+    { "type": "memory", "key": "󰑭  memory  ", "keyColor": "38;5;79" },
+    { "type": "disk", "key": "󰋊  disk    ", "keyColor": "38;5;74" },
+    { "type": "command", "key": "󰄉  install ", "keyColor": "38;5;152", "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo \"$days_difference days\"" },
+    { "type": "media", "key": "󰝚  media   ", "keyColor": "38;5;143" },
+
+    "break",
+    { "type": "custom", "format": "  ┌────────────────────────────┐" },
+    { "type": "colors", "symbol": "circle", "paddingLeft": 9 },
+    { "type": "custom", "format": "  └────────────────────────────┘" }
+  ]
+}
