@@ -1,5 +1,7 @@
 fastfetch config 
 
-rm -rf .config/fastfetch
+If you have a custom config, back it up:
+mv ~/.config/fastfetch ~/.config/fastfetch.bak
 
-git clone https://github.com/asdwa3415-collab/fastfetch-config .config/fastfetch
+Then:
+git clone https://github.com/asdwa3415-collab/fastfetch-config ~/.config/fastfetch
