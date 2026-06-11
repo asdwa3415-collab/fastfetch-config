@@ -1,7 +1,7 @@
 fastfetch config 
 
-If you have a custom config, back it up:  
+If you have a custom config, back it up: 
 mv ~/.config/fastfetch ~/.config/fastfetch.bak
 
-Then:  
+Then: 
 git clone https://github.com/asdwa3415-collab/fastfetch-config ~/.config/fastfetch
